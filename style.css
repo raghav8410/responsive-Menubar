@@ -24,7 +24,7 @@ body {
 }
 
 .menu {
-    line-height: 100px;
+    line-height: 80px;
 }
 
 .menu a {
@@ -75,6 +75,7 @@ body {
 
 .footer {
     display: flex;
+    text-align: center;
     background-color: #333;
 }
 
@@ -91,10 +92,20 @@ body {
     padding: 5px 0;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
+    .banner {
+        width: 100vw;
+        height: 50vh;
+    }
+    .header h2 {
+        display: none;
+    }
+    .container img {
+        width: 100vw;
+    }
     .footer ul {
         text-align: center;
-        padding: 0 50px 0 50px;
+        padding: 0 30px 0 30px;
     }
     .footer {
         display: flex;
@@ -106,7 +117,6 @@ body {
     .hide-menu-btn {
         display: block;
     }
-    .header {}
     .menu {
         position: fixed;
         width: 100%;
