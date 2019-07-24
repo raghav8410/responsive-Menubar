@@ -7,7 +7,7 @@ body {
 
 .header {
     height: 100vh;
-    width: 160px;
+    width: 13vw;
     background: #34495e;
     padding: 0 20px;
     color: #fff;
@@ -60,11 +60,11 @@ body {
 }
 
 .container {
-    margin-left: 200px;
+    margin-left: 16.1vw;
 }
 
 .banner {
-    width: 83.5vw;
+    width: 82.9vw;
     height: 50vh;
 }
 
@@ -168,4 +168,12 @@ body {
     .footer {
         padding: 0 50px 0 50px;
     }
+}
+
+.item {
+    display: none;
+}
+
+hoverable:hover .item {
+    display: block;
 }
