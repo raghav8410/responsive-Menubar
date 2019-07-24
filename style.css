@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
@@ -13,14 +14,16 @@ body {
     position: fixed;
 }
 
+.header h2 {
+    padding: 0 0 0 40px;
+}
+
 .logo {
     line-height: 100px;
-    float: left;
     text-transform: uppercase;
 }
 
 .menu {
-    float: right;
     line-height: 100px;
 }
 
@@ -29,7 +32,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     transition: 0.4s;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .show-menu-btn,
@@ -38,10 +41,6 @@ body {
     font-size: 30px;
     cursor: pointer;
     display: none;
-}
-
-.show-menu-btn {
-    float: right;
 }
 
 .show-menu-btn i {
@@ -58,6 +57,48 @@ body {
     position: absolute;
     visibility: hidden;
     z-index: -1111;
+}
+
+.container {
+    margin-left: 200px;
+}
+
+.banner {
+    width: 83.5vw;
+    height: 50vh;
+}
+
+.container p {
+    padding: 10px 10px;
+    text-align: justify;
+}
+
+.footer {
+    display: flex;
+    background-color: #333;
+}
+
+.service-1 {
+    display: flex;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0 100px;
+}
+
+.footer ul li {
+    padding: 5px 0;
+}
+
+@media screen and (max-width:500px) {
+    .footer ul {
+        text-align: center;
+        padding: 0 50px 0 50px;
+    }
+    .footer {
+        display: flex;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -97,5 +138,24 @@ body {
     }
     #chk:checked~.menu {
         right: 0;
+    }
+    .container {
+        margin-left: 0px;
+    }
+    .banner {
+        width: 100vw;
+        height: 50vh;
+    }
+    .header h2 {
+        display: none;
+    }
+    .container img {
+        width: 100vw;
+    }
+    .footer {
+        display: block;
+    }
+    .footer {
+        padding: 0 50px 0 50px;
     }
 }
